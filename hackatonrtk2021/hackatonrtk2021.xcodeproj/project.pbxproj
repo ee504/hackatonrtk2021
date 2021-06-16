@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A08D8D7267A9E0A00A48AAB /* GeneralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A08D8D6267A9E0A00A48AAB /* GeneralViewModel.swift */; };
 		9A6A97F1266A9B4D00E76136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A97F0266A9B4D00E76136 /* AppDelegate.swift */; };
 		9A6A97F3266A9B4D00E76136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A97F2266A9B4D00E76136 /* SceneDelegate.swift */; };
 		9A6A97F5266A9B4D00E76136 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A97F4266A9B4D00E76136 /* ContentView.swift */; };
@@ -14,9 +15,11 @@
 		9A6A97FA266A9B5000E76136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6A97F9266A9B5000E76136 /* Assets.xcassets */; };
 		9A6A97FD266A9B5000E76136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6A97FC266A9B5000E76136 /* Preview Assets.xcassets */; };
 		9A6A9800266A9B5000E76136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6A97FE266A9B5000E76136 /* LaunchScreen.storyboard */; };
+		9AB79BC0267A8A3E00E59838 /* GeneralLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A08D8D6267A9E0A00A48AAB /* GeneralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewModel.swift; sourceTree = "<group>"; };
 		9A6A97ED266A9B4D00E76136 /* hackatonrtk2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackatonrtk2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6A97F0266A9B4D00E76136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6A97F2266A9B4D00E76136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9A6A97FC266A9B5000E76136 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A6A97FF266A9B5000E76136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6A9801266A9B5000E76136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		9A6A97EF266A9B4D00E76136 /* hackatonrtk2021 */ = {
 			isa = PBXGroup;
 			children = (
+				9AB79BBE267A88DB00E59838 /* Login */,
 				9A6A97F0266A9B4D00E76136 /* AppDelegate.swift */,
 				9A6A97F2266A9B4D00E76136 /* SceneDelegate.swift */,
 				9A6A97F4266A9B4D00E76136 /* ContentView.swift */,
@@ -76,6 +81,15 @@
 				9A6A97FC266A9B5000E76136 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AB79BBE267A88DB00E59838 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */,
+				9A08D8D6267A9E0A00A48AAB /* GeneralViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +164,10 @@
 			files = (
 				9A6A97F1266A9B4D00E76136 /* AppDelegate.swift in Sources */,
 				9A6A97F3266A9B4D00E76136 /* SceneDelegate.swift in Sources */,
+				9AB79BC0267A8A3E00E59838 /* GeneralLoginView.swift in Sources */,
 				9A6A97F5266A9B4D00E76136 /* ContentView.swift in Sources */,
 				9A6A97F8266A9B4D00E76136 /* hackatonrtk2021.xcdatamodeld in Sources */,
+				9A08D8D7267A9E0A00A48AAB /* GeneralViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
