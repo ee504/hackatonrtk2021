@@ -44,10 +44,12 @@ private extension GeneralLoginView {
         VStack(spacing: 45) {
             VStack(spacing: 4) {
                 TextField("Email", text: $viewModel.email)
+                    .font(.body)
                 Divider()
             }
             VStack(spacing: 4) {
                 SecureField("Пароль", text: $viewModel.password)
+                    .font(.body)
                 Divider()
             }
         }
@@ -55,17 +57,9 @@ private extension GeneralLoginView {
     }
     
     var button: some View {
-        Button(action: {
+        PrimaryButton(isEnabled: .constant(true), title: "Войти") {
             viewModel.action()
-        }) {
-            Text(viewModel.buttonName)
-                .font(Font.custom("Gotham Pro", size: 17))
-                .foregroundColor(.white)
         }
-        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: 50)
-        .background(
-            LinearGradient(gradient: Gradient(colors: [Color("OrangeStart"), Color("OrangeEnd")]), startPoint: .leading, endPoint: .trailing)
-        )
     }
 }
 

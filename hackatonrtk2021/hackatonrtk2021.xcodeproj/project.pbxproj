@@ -16,6 +16,12 @@
 		9A6A97FD266A9B5000E76136 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6A97FC266A9B5000E76136 /* Preview Assets.xcassets */; };
 		9A6A9800266A9B5000E76136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6A97FE266A9B5000E76136 /* LaunchScreen.storyboard */; };
 		9AB79BC0267A8A3E00E59838 /* GeneralLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */; };
+		9ADB7AB6267BD0F200D20627 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7AB5267BD0F200D20627 /* PasswordTextField.swift */; };
+		9ADB7ABA267BD13400D20627 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7AB9267BD13400D20627 /* PrimaryButton.swift */; };
+		9ADB7ABE267BD34400D20627 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7ABD267BD34400D20627 /* LoginView.swift */; };
+		9ADB7AC3267BD4D700D20627 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7AC2267BD4D700D20627 /* LoginViewModel.swift */; };
+		9ADB7AC8267BDBC300D20627 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7AC7267BDBC300D20627 /* QuestionsView.swift */; };
+		9ADB7ACC267BE5D300D20627 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADB7ACB267BE5D300D20627 /* QuestionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		9A6A97FF266A9B5000E76136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6A9801266A9B5000E76136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLoginView.swift; sourceTree = "<group>"; };
+		9ADB7AB5267BD0F200D20627 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		9ADB7AB9267BD13400D20627 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		9ADB7ABD267BD34400D20627 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9ADB7AC2267BD4D700D20627 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9ADB7AC7267BDBC300D20627 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		9ADB7ACB267BE5D300D20627 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 		9A6A97EF266A9B4D00E76136 /* hackatonrtk2021 */ = {
 			isa = PBXGroup;
 			children = (
+				9ADB7AB4267BD0D400D20627 /* Components */,
 				9AB79BBE267A88DB00E59838 /* Login */,
 				9A6A97F0266A9B4D00E76136 /* AppDelegate.swift */,
 				9A6A97F2266A9B4D00E76136 /* SceneDelegate.swift */,
@@ -86,10 +99,47 @@
 		9AB79BBE267A88DB00E59838 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */,
-				9A08D8D6267A9E0A00A48AAB /* GeneralViewModel.swift */,
+				9ADB7AC6267BDBAB00D20627 /* Registration */,
+				9ADB7AC1267BD4C400D20627 /* Login */,
+				9ADB7ABC267BD32D00D20627 /* General */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		9ADB7AB4267BD0D400D20627 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9ADB7AB5267BD0F200D20627 /* PasswordTextField.swift */,
+				9ADB7AB9267BD13400D20627 /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9ADB7ABC267BD32D00D20627 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				9A08D8D6267A9E0A00A48AAB /* GeneralViewModel.swift */,
+				9AB79BBF267A8A3E00E59838 /* GeneralLoginView.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		9ADB7AC1267BD4C400D20627 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9ADB7ABD267BD34400D20627 /* LoginView.swift */,
+				9ADB7AC2267BD4D700D20627 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9ADB7AC6267BDBAB00D20627 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				9ADB7AC7267BDBC300D20627 /* QuestionsView.swift */,
+				9ADB7ACB267BE5D300D20627 /* QuestionsViewModel.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +214,15 @@
 			files = (
 				9A6A97F1266A9B4D00E76136 /* AppDelegate.swift in Sources */,
 				9A6A97F3266A9B4D00E76136 /* SceneDelegate.swift in Sources */,
+				9ADB7ACC267BE5D300D20627 /* QuestionsViewModel.swift in Sources */,
+				9ADB7AB6267BD0F200D20627 /* PasswordTextField.swift in Sources */,
+				9ADB7ABE267BD34400D20627 /* LoginView.swift in Sources */,
+				9ADB7AC8267BDBC300D20627 /* QuestionsView.swift in Sources */,
 				9AB79BC0267A8A3E00E59838 /* GeneralLoginView.swift in Sources */,
 				9A6A97F5266A9B4D00E76136 /* ContentView.swift in Sources */,
 				9A6A97F8266A9B4D00E76136 /* hackatonrtk2021.xcdatamodeld in Sources */,
+				9ADB7ABA267BD13400D20627 /* PrimaryButton.swift in Sources */,
+				9ADB7AC3267BD4D700D20627 /* LoginViewModel.swift in Sources */,
 				9A08D8D7267A9E0A00A48AAB /* GeneralViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hackatonrtk2021/Preview Content\"";
+				DEVELOPMENT_TEAM = G8PUKDV953;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = hackatonrtk2021/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hackatonrtk2021/Preview Content\"";
+				DEVELOPMENT_TEAM = G8PUKDV953;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = hackatonrtk2021/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
